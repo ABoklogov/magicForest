@@ -7,6 +7,7 @@
 :root {
   --index: calc(1vw + 1vh);
   --transition: 1.5s cubic-bezier(.05, .5, 0, 1);
+  --transitionSpeed: .5s cubic-bezier(.05, .5, 0, 1);
 }
 
 @font-face {
@@ -82,6 +83,10 @@ body {
 }
 
 .layer-6 {
+  transform: translateZ(340px) scale(.6);
+}
+
+.layer-7 {
   transform: translateZ(380px);
 }
 
@@ -116,10 +121,11 @@ body {
   outline: none;
   cursor: pointer;
   margin-top: calc(var(--index) * 2.5);
+  transition: opacity var(--transitionSpeed);
 }
 
 .layer-4,
 .layer-5,
-.layer-6 {
+.layer-7 {
   pointer-events: none;
 }

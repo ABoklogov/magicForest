@@ -6,3 +6,12 @@ document.addEventListener('mousemove', e => {
     `
   })
 })
+
+const startPlayer = document.querySelector('.button-start');
+const playerLayer = document.querySelector('.layer-6');
+const player = document.querySelector('.player');
+
+startPlayer.addEventListener('click', () => {
+  playerLayer.classList.add('show');
+  startPlayer.classList.add('is-hidden');
+})
