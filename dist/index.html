@@ -37,16 +37,15 @@
       <div class="layers__item layer-5" style="background-image: url(/layer-5.d8b89b86.png);"></div>
       <div class="layers__item layer-6">
         <div class="wrapper" id="app">
-  <div class="player" :style="{top, left}">
-    <div class="player__header" @mousedown="mousedownPlayer"></div>
-    <div class="player__body">
-      <div class="player__top">
-        <div class="player-cover">
+  <div class="player">
+    <div class="player__top">
+      <!-- <div class="player-cover">
           <transition-group :name="transitionName">
-            <div class="player-cover__item" v-if="$index === currentTrackIndex" :style="{ backgroundImage: `url(${track.cover})` }" v-for="(track, $index) in tracks" :key="$index"></div>
+            <div class="player-cover__item" v-if="$index === currentTrackIndex" :style="{ backgroundImage: `url(${track.cover})` }"
+              v-for="(track, $index) in tracks" :key="$index"></div>
           </transition-group>
-        </div>
-        <div class="player-controls">
+        </div> -->
+      <!-- <div class="player-controls">
           <div class="player-controls__item -favorite" :class="{ active : currentTrack.favorited }" @click="favorite">
             <svg class="icon">
               <use xlink:href="#icon-heart-o"></use>
@@ -70,11 +69,11 @@
           <div class="player-controls__item -xl js-play" @click="play">
             <svg class="icon">
               <use xlink:href="#icon-pause" v-if="isTimerPlaying"></use>
-              <use xlink:href="#icon-play" v-else=""></use>
+              <use xlink:href="#icon-play" v-else></use>
             </svg>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="progress" ref="progress">
         <div class="progress__top">
           <div class="album-info" v-if="currentTrack">
@@ -90,13 +89,29 @@
       </div>
       <div v-cloak=""></div>
     </div>
-  </div>
-  <!-- <a href="https://github.com/muhammederdem/mini-player" target="_blank" class="github-btn">
-            See on GitHub
-          </a> -->
-</div>
+    <div class="player-controls">
+      <div class="player-controls__item" @click="prevTrack">
+        <svg class="icon">
+          <use xlink:href="#icon-prev"></use>
+        </svg>
+      </div>
 
-<svg xmlns="http://www.w3.org/2000/svg" hidden="" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <div class="player-controls__item -xl js-play" @click="play">
+        <svg class="icon">
+          <use xlink:href="#icon-pause" v-if="isTimerPlaying"></use>
+          <use xlink:href="#icon-play" v-else=""></use>
+        </svg>
+      </div>
+
+      <div class="player-controls__item" @click="nextTrack">
+        <svg class="icon">
+          <use xlink:href="#icon-next"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <svg xmlns="http://www.w3.org/2000/svg" hidden="" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <symbol id="icon-heart-o" viewBox="0 0 32 32">
       <title>icon-heart-o</title>
@@ -167,7 +182,7 @@
       </path>
     </symbol>
   </defs>
-</svg>
+</svg></div>
       </div>
       <div class="layers__item layer-7" style="background-image: url(/layer-7.8a9f20d2.png);"></div>
     </div>

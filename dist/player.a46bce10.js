@@ -128,8 +128,8 @@ new Vue({
       duration: null,
       currentTime: null,
       isTimerPlaying: false,
-      top: '20vh;',
-      left: '20vw;',
+      // top: '20vh;',
+      // left: '20vw;',
       tracks: [{
         name: "Mekanın Sahibi",
         artist: "Norm Ender",
@@ -209,38 +209,6 @@ new Vue({
         this.isTimerPlaying = false;
       }
     },
-    mousedownPlayer: function mousedownPlayer(e) {
-      var _this = this;
-      var player = document.querySelector('.player');
-      var header = document.querySelector('.player__header');
-      var coords = this.getCoords(header);
-      console.log("🚀 ~ mousedownPlayer ~ coords:", coords);
-      var shiftX = e.pageX - coords.left;
-      var shiftY = e.pageY - coords.top;
-      console.log(shiftX, shiftY);
-      // передвинуть player под координаты курсора
-      // и сдвинуть на половину ширины/высоты для центрирования
-      var movePlayer = function movePlayer(e) {
-        _this.left = e.pageX - shiftX + 'px';
-        _this.top = e.pageY - shiftY + 'px';
-      };
-      movePlayer(e);
-
-      // перемещать по экрану
-      document.onmousemove = function (e) {
-        movePlayer(e);
-      };
-
-      // отследить окончание переноса
-      player.onmouseup = function () {
-        document.onmousemove = null;
-        player.onmouseup = null;
-      };
-
-      // player.ondragstart = () => {
-      //   return false;
-      // };
-    },
     getCoords: function getCoords(elem) {
       var box = elem.getBoundingClientRect();
       // console.log("🚀 ~ getCoords ~ box:", box)
@@ -317,16 +285,16 @@ new Vue({
       this.resetPlayer();
     },
     resetPlayer: function resetPlayer() {
-      var _this2 = this;
+      var _this = this;
       this.barWidth = 0;
       this.circleLeft = 0;
       this.audio.currentTime = 0;
       this.audio.src = this.currentTrack.source;
       setTimeout(function () {
-        if (_this2.isTimerPlaying) {
-          _this2.audio.play();
+        if (_this.isTimerPlaying) {
+          _this.audio.play();
         } else {
-          _this2.audio.pause();
+          _this.audio.pause();
         }
       }, 300);
     },
@@ -361,7 +329,7 @@ new Vue({
     }
   }
 });
-},{}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"../../../../../../opt/homebrew/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -386,7 +354,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49499" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58807" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
@@ -530,5 +498,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/player.js"], null)
+},{}]},{},["../../../../../../opt/homebrew/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/player.js"], null)
 //# sourceMappingURL=/player.a46bce10.js.map

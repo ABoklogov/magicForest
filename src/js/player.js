@@ -8,8 +8,8 @@ new Vue({
       duration: null,
       currentTime: null,
       isTimerPlaying: false,
-      top: '20vh;',
-      left: '20vw;',
+      // top: '20vh;',
+      // left: '20vw;',
       tracks: [
         {
           name: "Mekanın Sahibi",
@@ -99,38 +99,7 @@ new Vue({
         this.isTimerPlaying = false;
       }
     },
-    mousedownPlayer(e) {
-      const player = document.querySelector('.player');
-      const header = document.querySelector('.player__header');
-      const coords = this.getCoords(header);
-      console.log("🚀 ~ mousedownPlayer ~ coords:", coords)
-      const shiftX = e.pageX - coords.left;
-      const shiftY = e.pageY - coords.top;
-      console.log(shiftX, shiftY);
-      // передвинуть player под координаты курсора
-      // и сдвинуть на половину ширины/высоты для центрирования
-      const movePlayer = (e) => {
-        this.left = e.pageX - shiftX + 'px';
-        this.top = e.pageY - shiftY + 'px';
-      };
 
-      movePlayer(e);
-
-      // перемещать по экрану
-      document.onmousemove = (e) => {
-        movePlayer(e);
-      };
-
-      // отследить окончание переноса
-      player.onmouseup = () => {
-        document.onmousemove = null;
-        player.onmouseup = null;
-      };
-
-      // player.ondragstart = () => {
-      //   return false;
-      // };
-    },
     getCoords(elem) {
       const box = elem.getBoundingClientRect();
       // console.log("🚀 ~ getCoords ~ box:", box)
