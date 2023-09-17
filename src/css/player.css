@@ -32,30 +32,27 @@
 
 .player {
   position: absolute;
-  top: 75vh;
-  background-image: url(/img/player.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 1200px;
   min-height: 320px;
   padding: 30px;
 }
 
-@media screen and (max-width: 700px),
+/* @media screen and (max-width: 700px),
 (max-height: 500px) {
   .wrapper {
     flex-wrap: wrap;
     flex-direction: column;
   }
-}
+} */
 
-.player__header {
+/* .player__header {
   height: 30px;
   border-radius: 15px;
-}
+} */
 
 
-@media screen and (max-width: 576px),
+/* @media screen and (max-width: 768px),
 (max-height: 500px) {
   .player {
     width: 95%;
@@ -65,7 +62,7 @@
     padding-bottom: 30px;
     max-width: 400px;
   }
-}
+} */
 
 .player__top {
   display: flex;
@@ -74,12 +71,12 @@
   z-index: 4;
 }
 
-@media screen and (max-width: 576px),
+/* @media screen and (max-width: 768px),
 (max-height: 500px) {
   .player__top {
     flex-wrap: wrap;
   }
-}
+} */
 
 .player-cover {
   width: 300px;
@@ -92,7 +89,7 @@
   z-index: 1;
 }
 
-@media screen and (max-width: 576px),
+@media screen and (max-width: 768px),
 (max-height: 500px) {
   .player-cover {
     margin-top: -70px;
@@ -156,21 +153,16 @@
 
 .player-controls {
   display: flex;
-  align-items: flex-start;
+  flex-direction: row;
+  width: 100%;
+  flex: unset;
   padding: 0 10px 10px 10px;
   justify-content: space-between;
-  height: 100px;
-  width: 228px;
   margin-left: auto;
   margin-right: auto;
-  /* flex: 1;
-  padding-left: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; */
 }
 
-@media screen and (max-width: 576px),
+/* @media screen and (max-width: 768px),
 (max-height: 500px) {
   .player-controls {
     flex-direction: row;
@@ -178,7 +170,7 @@
     width: 100%;
     flex: unset;
   }
-}
+} */
 
 .player-controls__item {
   display: inline-flex;
@@ -193,20 +185,6 @@
   justify-content: center;
   position: relative;
   transition: all 0.3s ease-in-out;
-}
-
-@media screen and (max-width: 576px),
-(max-height: 500px) {
-  .player-controls__item {
-    font-size: 26px;
-    padding: 5px;
-    margin-right: 10px;
-    color: #acb8cc;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    margin-bottom: 0;
-  }
 }
 
 .player-controls__item::before {
@@ -234,7 +212,7 @@
   }
 }
 
-@media screen and (max-width: 576px),
+@media screen and (max-width: 768px),
 (max-height: 500px) {
   .player-controls__item:active {
     color: #532ab9;
@@ -262,14 +240,14 @@
   margin-top: 15px;
 }
 
-@media screen and (max-width: 576px),
+/* @media screen and (max-width: 768px),
 (max-height: 500px) {
   .player-controls__item.-xl {
     margin-left: auto;
     font-size: 75px;
     margin-right: 0;
   }
-}
+} */
 
 .player-controls__item.-xl:before {
   display: none;
@@ -337,7 +315,7 @@
   user-select: none;
 }
 
-@media screen and (max-width: 576px),
+@media screen and (max-width: 768px),
 (max-height: 500px) {
   .album-info {
     padding-right: 30px;
@@ -351,7 +329,7 @@
   line-height: 1.3em;
 }
 
-@media screen and (max-width: 576px),
+@media screen and (max-width: 768px),
 (max-height: 500px) {
   .album-info__name {
     font-size: 18px;
@@ -367,7 +345,7 @@
   min-height: 30px;
 }
 
-@media screen and (max-width: 576px),
+@media screen and (max-width: 768px),
 (max-height: 500px) {
   .album-info__track {
     font-size: 18px;
@@ -453,3 +431,55 @@
 }
 
 /*# sourceMappingURL=main.css.map */
+@media screen and (min-width: 320px) {
+  .player {
+    top: 65vh;
+    background-image: url(/img/player-mobile.svg);
+    width: 400px;
+  }
+
+  .player-controls {
+    align-items: center;
+    height: 75px;
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .player {
+    top: 70vh;
+    background-image: url(/img/player-tablete.svg);
+    width: 800px;
+  }
+
+  .player-controls {
+    /* align-items: center; */
+    height: 180px;
+    width: 240px;
+  }
+
+  .player-controls__item {
+    font-size: 26px;
+    padding: 5px;
+    /* margin-right: 10px; */
+    color: #acb8cc;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .player {
+    top: 75vh;
+    background-image: url(/img/player-desctop.svg);
+    width: 1200px;
+  }
+
+  .player-controls {
+    align-items: flex-start;
+    height: 100px;
+    width: 228px;
+  }
+}

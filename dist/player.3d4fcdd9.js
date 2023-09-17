@@ -172,7 +172,7 @@ module.exports = reloadCSS;
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"/Users/alexey/Documents/projects/magicForest/src/img/player.svg":[["player.d6808a68.svg","img/player.svg"],"img/player.svg"],"_css_loader":"../../../../../../opt/homebrew/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../../opt/homebrew/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"/Users/alexey/Documents/projects/magicForest/src/img/player-mobile.svg":[["player-mobile.7c1918c0.svg","img/player-mobile.svg"],"img/player-mobile.svg"],"/Users/alexey/Documents/projects/magicForest/src/img/player-tablete.svg":[["player-tablete.19a6c951.svg","img/player-tablete.svg"],"img/player-tablete.svg"],"/Users/alexey/Documents/projects/magicForest/src/img/player-desctop.svg":[["player-desctop.9aceec51.svg","img/player-desctop.svg"],"img/player-desctop.svg"],"_css_loader":"../../../../../../opt/homebrew/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../../opt/homebrew/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -197,7 +197,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58807" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49293" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
