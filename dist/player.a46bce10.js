@@ -128,70 +128,26 @@ new Vue({
       duration: null,
       currentTime: null,
       isTimerPlaying: false,
-      // top: '20vh;',
-      // left: '20vw;',
       tracks: [{
-        name: "Mekanın Sahibi",
-        artist: "Norm Ender",
-        cover: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/img/1.jpg",
-        source: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/mp3/1.mp3",
-        url: "https://www.youtube.com/watch?v=z3wAjJXbYzA",
+        name: "Muthafucka (Soundscape Mix)",
+        artist: "Way Out West",
+        cover: "https://i.discogs.com/TI9fNIwxEr-cYGUdvLrb7Cq-ooQZc0Wans6Wacj29DA/rs:fit/g:sm/q:90/h:460/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyNDM2/Mi0xMTY4NzcwNDQ2/LmpwZWc.jpeg",
+        source: "https://oxy.sunproxy.net/file/SUsvSEtsdEJlNndmWHMwQUc3Zkd6NCtiMU9xSEx1dmtRUXBwVVhmUDdldWsxYzdUL3UwTVJwRVR0ZDlzYk5USXBvTDRadGt6SUVkd1NSWVFQVmltangwczJvcXBDSEFBRDhDNExvV1hxZmc9/Way_Out_West_-_Muthafucka_Soundscape_Rmx_(Vuxo7.com).mp3",
+        url: "https://www.youtube.com/watch?v=GtcKN6w_B1k",
         favorited: false
       }, {
-        name: "Everybody Knows",
-        artist: "Leonard Cohen",
-        cover: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/img/2.jpg",
-        source: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/mp3/2.mp3",
-        url: "https://www.youtube.com/watch?v=Lin-a2lTelg",
+        name: "Tranquillicy",
+        artist: "Chi-A.D.",
+        cover: "https://is1-ssl.mzstatic.com/image/thumb/Music20/v4/14/37/6a/14376a0d-1ec0-a76c-aef5-22e078f568b0/mzm.efpiykmd.jpg/316x316bb.webp",
+        source: "https://oxy.sunproxy.net/file/SUsvSEtsdEJlNndmWHMwQUc3Zkd6NCtiMU9xSEx1dmtRUXBwVVhmUDdldDFMaCtrZmNDcm5BSTdzTVRnOThuQ2lieDZVYmtKbmg5d085bmh6SVoyZ1QzdERhcG5yNjBETDNaVFZieWZielU9/Chi-A.D._-_Tranquillicy_(Vuxo7.com).mp3",
+        url: "https://www.youtube.com/watch?v=vSQzEDX6v1s",
         favorited: true
       }, {
-        name: "Extreme Ways",
-        artist: "Moby",
-        cover: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/img/3.jpg",
-        source: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/mp3/3.mp3",
-        url: "https://www.youtube.com/watch?v=ICjyAe9S54c",
-        favorited: false
-      }, {
-        name: "Butterflies",
-        artist: "Sia",
-        cover: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/img/4.jpg",
-        source: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/mp3/4.mp3",
-        url: "https://www.youtube.com/watch?v=kYgGwWYOd9Y",
-        favorited: false
-      }, {
-        name: "The Final Victory",
-        artist: "Haggard",
-        cover: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/img/5.jpg",
-        source: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/mp3/5.mp3",
-        url: "https://www.youtube.com/watch?v=0WlpALnQdN8",
-        favorited: true
-      }, {
-        name: "Genius ft. Sia, Diplo, Labrinth",
-        artist: "LSD",
-        cover: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/img/6.jpg",
-        source: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/mp3/6.mp3",
-        url: "https://www.youtube.com/watch?v=HhoATZ1Imtw",
-        favorited: false
-      }, {
-        name: "The Comeback Kid",
-        artist: "Lindi Ortega",
-        cover: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/img/7.jpg",
-        source: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/mp3/7.mp3",
-        url: "https://www.youtube.com/watch?v=me6aoX0wCV8",
-        favorited: true
-      }, {
-        name: "Overdose",
-        artist: "Grandson",
-        cover: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/img/8.jpg",
-        source: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/mp3/8.mp3",
-        url: "https://www.youtube.com/watch?v=00-Rl3Jlx-o",
-        favorited: false
-      }, {
-        name: "Rag'n'Bone Man",
-        artist: "Human",
-        cover: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/img/9.jpg",
-        source: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/mp3/9.mp3",
-        url: "https://www.youtube.com/watch?v=L3wKzyIN1yk",
+        name: "Spiritwalker",
+        artist: "Psychonaut",
+        cover: "https://i1.sndcdn.com/artworks-000010247991-ztalsg-t500x500.jpg",
+        source: "https://oxy.sunproxy.net/file/SUsvSEtsdEJlNndmWHMwQUc3Zkd6NCtiMU9xSEx1dmtRUXBwVVhmUDdldjJJcjdQWUhISmE0NVhUQjA3eVJ3ZzBWTmJHWmxROUQ5bEF6cFdRU1RBTFZPTWR2a2pIcnJuRk90d3EzVVY4ckE9/psychonaut_-_spiritwalker_(Vuxo7.com).mp3",
+        url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
         favorited: false
       }],
       currentTrack: null,
@@ -208,15 +164,6 @@ new Vue({
         this.audio.pause();
         this.isTimerPlaying = false;
       }
-    },
-    getCoords: function getCoords(elem) {
-      var box = elem.getBoundingClientRect();
-      // console.log("🚀 ~ getCoords ~ box:", box)
-      // console.log("🚀 ~ getCoords ~ pageYOffset:", pageYOffset)
-      return {
-        top: box.top + pageYOffset,
-        left: box.left + pageXOffset
-      };
     },
     generateTime: function generateTime() {
       var width = 100 / this.audio.duration * this.audio.currentTime;
@@ -354,7 +301,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49293" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49771" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
