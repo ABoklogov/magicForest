@@ -1,3 +1,6 @@
+import WayOutWest from '../audio/01 - Way Out West - Muthafucka (Soundscape Mix).mp3';
+
+
 new Vue({
   el: "#app",
   data() {
@@ -12,27 +15,26 @@ new Vue({
         {
           name: "Muthafucka (Soundscape Mix)",
           artist: "Way Out West",
-          cover: "https://i.discogs.com/TI9fNIwxEr-cYGUdvLrb7Cq-ooQZc0Wans6Wacj29DA/rs:fit/g:sm/q:90/h:460/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyNDM2/Mi0xMTY4NzcwNDQ2/LmpwZWc.jpeg",
-          source: "https://oxy.sunproxy.net/file/SUsvSEtsdEJlNndmWHMwQUc3Zkd6NCtiMU9xSEx1dmtRUXBwVVhmUDdldWsxYzdUL3UwTVJwRVR0ZDlzYk5USXBvTDRadGt6SUVkd1NSWVFQVmltangwczJvcXBDSEFBRDhDNExvV1hxZmc9/Way_Out_West_-_Muthafucka_Soundscape_Rmx_(Vuxo7.com).mp3",
+          // cover: "https://i.discogs.com/TI9fNIwxEr-cYGUdvLrb7Cq-ooQZc0Wans6Wacj29DA/rs:fit/g:sm/q:90/h:460/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyNDM2/Mi0xMTY4NzcwNDQ2/LmpwZWc.jpeg",
+          // source: "https://oxy.sunproxy.net/file/SUsvSEtsdEJlNndmWHMwQUc3Zkd6NCtiMU9xSEx1dmtRUXBwVVhmUDdldWsxYzdUL3UwTVJwRVR0ZDlzYk5USXBvTDRadGt6SUVkd1NSWVFQVmltangwczJvcXBDSEFBRDhDNExvV1hxZmc9/Way_Out_West_-_Muthafucka_Soundscape_Rmx_(Vuxo7.com).mp3",
+          source: WayOutWest,
           url: "https://www.youtube.com/watch?v=GtcKN6w_B1k",
           favorited: false
         },
-        {
-          name: "Tranquillicy",
-          artist: "Chi-A.D.",
-          cover: "https://is1-ssl.mzstatic.com/image/thumb/Music20/v4/14/37/6a/14376a0d-1ec0-a76c-aef5-22e078f568b0/mzm.efpiykmd.jpg/316x316bb.webp",
-          source: "https://oxy.sunproxy.net/file/SUsvSEtsdEJlNndmWHMwQUc3Zkd6NCtiMU9xSEx1dmtRUXBwVVhmUDdldDFMaCtrZmNDcm5BSTdzTVRnOThuQ2lieDZVYmtKbmg5d085bmh6SVoyZ1QzdERhcG5yNjBETDNaVFZieWZielU9/Chi-A.D._-_Tranquillicy_(Vuxo7.com).mp3",
-          url: "https://www.youtube.com/watch?v=vSQzEDX6v1s",
-          favorited: true
-        },
-        {
-          name: "Spiritwalker",
-          artist: "Psychonaut",
-          cover: "https://i1.sndcdn.com/artworks-000010247991-ztalsg-t500x500.jpg",
-          source: "https://oxy.sunproxy.net/file/SUsvSEtsdEJlNndmWHMwQUc3Zkd6NCtiMU9xSEx1dmtRUXBwVVhmUDdldjJJcjdQWUhISmE0NVhUQjA3eVJ3ZzBWTmJHWmxROUQ5bEF6cFdRU1RBTFZPTWR2a2pIcnJuRk90d3EzVVY4ckE9/psychonaut_-_spiritwalker_(Vuxo7.com).mp3",
-          url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
-          favorited: false
-        },
+        // {
+        //   name: "Tranquillicy",
+        //   artist: "Chi-A.D.",
+        //   source: "https://oxy.sunproxy.net/file/SUsvSEtsdEJlNndmWHMwQUc3Zkd6NCtiMU9xSEx1dmtRUXBwVVhmUDdldDFMaCtrZmNDcm5BSTdzTVRnOThuQ2lieDZVYmtKbmg5d085bmh6SVoyZ1QzdERhcG5yNjBETDNaVFZieWZielU9/Chi-A.D._-_Tranquillicy_(Vuxo7.com).mp3",
+        //   url: "https://www.youtube.com/watch?v=vSQzEDX6v1s",
+        //   favorited: true
+        // },
+        // {
+        //   name: "Spiritwalker",
+        //   artist: "Psychonaut",
+        //   source: "https://oxy.sunproxy.net/file/SUsvSEtsdEJlNndmWHMwQUc3Zkd6NCtiMU9xSEx1dmtRUXBwVVhmUDdldjJJcjdQWUhISmE0NVhUQjA3eVJ3ZzBWTmJHWmxROUQ5bEF6cFdRU1RBTFZPTWR2a2pIcnJuRk90d3EzVVY4ckE9/psychonaut_-_spiritwalker_(Vuxo7.com).mp3",
+        //   url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
+        //   favorited: false
+        // },
       ],
       currentTrack: null,
       currentTrackIndex: 0,
@@ -51,6 +53,10 @@ new Vue({
     },
     generateTime() {
       let width = (100 / this.audio.duration) * this.audio.currentTime;
+
+      console.log(this.audio.duration);
+      console.log("🚀 ~ generateTime ~ width:", width)
+
       this.barWidth = width + "%";
       this.circleLeft = width + "%";
       let durmin = Math.floor(this.audio.duration / 60);
@@ -89,6 +95,7 @@ new Vue({
       this.audio.play();
     },
     clickProgress(e) {
+      console.log("🚀 ~ clickProgress ~ e:", e)
       this.isTimerPlaying = true;
       this.audio.pause();
       this.updateBar(e.pageX);
@@ -139,6 +146,7 @@ new Vue({
     this.currentTrack = this.tracks[0];
     this.audio = new Audio();
     this.audio.src = this.currentTrack.source;
+
     this.audio.ontimeupdate = function () {
       vm.generateTime();
     };

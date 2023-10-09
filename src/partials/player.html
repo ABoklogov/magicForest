@@ -1,12 +1,12 @@
 <div class="wrapper" id="app">
   <div class="player">
     <div class="player__top">
-      <div class="player-cover">
+      <!-- <div class="player-cover">
         <transition-group :name="transitionName">
           <div class="player-cover__item" v-if="$index === currentTrackIndex" :style="{ backgroundImage: `url(${track.cover})` }"
             v-for="(track, $index) in tracks" :key="$index"></div>
         </transition-group>
-      </div>
+      </div> -->
       <!-- <div class="player-controls">
           <div class="player-controls__item -favorite" :class="{ active : currentTrack.favorited }" @click="favorite">
             <svg class="icon">
@@ -36,6 +36,8 @@
           </div>
         </div>
       </div> -->
+
+      <!-- {{audio}} -->
       <div class="progress" ref="progress">
         <div class="progress__top">
           <div class="album-info" v-if="currentTrack">
