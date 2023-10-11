@@ -54,9 +54,6 @@ new Vue({
     generateTime() {
       let width = (100 / this.audio.duration) * this.audio.currentTime;
 
-      console.log(this.audio.duration);
-      console.log("🚀 ~ generateTime ~ width:", width)
-
       this.barWidth = width + "%";
       this.circleLeft = width + "%";
       let durmin = Math.floor(this.audio.duration / 60);
@@ -80,9 +77,11 @@ new Vue({
     },
     updateBar(x) {
       let progress = this.$refs.progress;
+      let player = this.$refs.player;
       let maxduration = this.audio.duration;
-      let position = x - progress.offsetLeft;
-      let percentage = (100 * position) / progress.offsetWidth;
+
+      let position = (x - progress.offsetParent.offsetLeft - player.offsetLeft);
+      let percentage = ((100 * position) / progress.offsetWidth);
       if (percentage > 100) {
         percentage = 100;
       }
@@ -95,7 +94,6 @@ new Vue({
       this.audio.play();
     },
     clickProgress(e) {
-      console.log("🚀 ~ clickProgress ~ e:", e)
       this.isTimerPlaying = true;
       this.audio.pause();
       this.updateBar(e.pageX);

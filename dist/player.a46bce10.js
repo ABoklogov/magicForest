@@ -176,8 +176,6 @@ new Vue({
     },
     generateTime: function generateTime() {
       var width = 100 / this.audio.duration * this.audio.currentTime;
-      console.log(this.audio.duration);
-      console.log("🚀 ~ generateTime ~ width:", width);
       this.barWidth = width + "%";
       this.circleLeft = width + "%";
       var durmin = Math.floor(this.audio.duration / 60);
@@ -201,8 +199,9 @@ new Vue({
     },
     updateBar: function updateBar(x) {
       var progress = this.$refs.progress;
+      var player = this.$refs.player;
       var maxduration = this.audio.duration;
-      var position = x - progress.offsetLeft;
+      var position = x - progress.offsetParent.offsetLeft - player.offsetLeft;
       var percentage = 100 * position / progress.offsetWidth;
       if (percentage > 100) {
         percentage = 100;
@@ -216,7 +215,6 @@ new Vue({
       this.audio.play();
     },
     clickProgress: function clickProgress(e) {
-      console.log("🚀 ~ clickProgress ~ e:", e);
       this.isTimerPlaying = true;
       this.audio.pause();
       this.updateBar(e.pageX);
@@ -313,7 +311,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54028" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55076" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

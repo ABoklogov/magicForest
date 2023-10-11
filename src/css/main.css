@@ -82,11 +82,11 @@ body {
   transform: translateZ(300px) scale(.9);
 }
 
-.layer-6 {
+/* .layer-6 {
   transform: translateZ(340px) scale(.6);
-}
+} */
 
-.layer-7 {
+.layer-6 {
   transform: translateZ(380px);
 }
 
@@ -126,6 +126,6 @@ body {
 
 .layer-4,
 .layer-5,
-.layer-7 {
+.layer-6 {
   pointer-events: none;
 }
