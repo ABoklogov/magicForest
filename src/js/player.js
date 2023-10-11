@@ -1,4 +1,14 @@
-import WayOutWest from '../audio/01 - Way Out West - Muthafucka (Soundscape Mix).mp3';
+import track_1 from '../audio/01 - Way Out West - Muthafucka (Soundscape Mix).mp3';
+import track_2 from '../audio/02 - Chi-Ad - Tranquillicy.mp3';
+import track_3 from '../audio/03 - Psychonaut - Spiritwalker.mp3';
+import track_4 from '../audio/04 - X-Dream - Out of Your Control.mp3';
+import track_5 from '../audio/05 - Cosmosis - Afterglow.mp3';
+import track_6 from '../audio/06 - Mittelstandskinder Ohne Strom - Waterphone.mp3';
+import track_7 from '../audio/07 - Fluffy Puppy - Christania Jay.mp3';
+import track_8 from '../audio/08 - Mittelstandskinder Ohne Strom - Gone.mp3';
+import track_9 from '../audio/09 - X-Dream - Relaxed Vortex.mp3';
+import track_10 from '../audio/10 - Sub6 - Raheya (Shulman Remix).mp3';
+import track_11 from '../audio/11 - Psysex - Come in Peace (Reprise).mp3';
 
 
 new Vue({
@@ -15,26 +25,80 @@ new Vue({
         {
           name: "Muthafucka (Soundscape Mix)",
           artist: "Way Out West",
-          // cover: "https://i.discogs.com/TI9fNIwxEr-cYGUdvLrb7Cq-ooQZc0Wans6Wacj29DA/rs:fit/g:sm/q:90/h:460/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyNDM2/Mi0xMTY4NzcwNDQ2/LmpwZWc.jpeg",
-          // source: "https://oxy.sunproxy.net/file/SUsvSEtsdEJlNndmWHMwQUc3Zkd6NCtiMU9xSEx1dmtRUXBwVVhmUDdldWsxYzdUL3UwTVJwRVR0ZDlzYk5USXBvTDRadGt6SUVkd1NSWVFQVmltangwczJvcXBDSEFBRDhDNExvV1hxZmc9/Way_Out_West_-_Muthafucka_Soundscape_Rmx_(Vuxo7.com).mp3",
-          source: WayOutWest,
-          url: "https://www.youtube.com/watch?v=GtcKN6w_B1k",
+          source: track_1,
+          // url: "https://www.youtube.com/watch?v=GtcKN6w_B1k",
           favorited: false
         },
-        // {
-        //   name: "Tranquillicy",
-        //   artist: "Chi-A.D.",
-        //   source: "https://oxy.sunproxy.net/file/SUsvSEtsdEJlNndmWHMwQUc3Zkd6NCtiMU9xSEx1dmtRUXBwVVhmUDdldDFMaCtrZmNDcm5BSTdzTVRnOThuQ2lieDZVYmtKbmg5d085bmh6SVoyZ1QzdERhcG5yNjBETDNaVFZieWZielU9/Chi-A.D._-_Tranquillicy_(Vuxo7.com).mp3",
-        //   url: "https://www.youtube.com/watch?v=vSQzEDX6v1s",
-        //   favorited: true
-        // },
-        // {
-        //   name: "Spiritwalker",
-        //   artist: "Psychonaut",
-        //   source: "https://oxy.sunproxy.net/file/SUsvSEtsdEJlNndmWHMwQUc3Zkd6NCtiMU9xSEx1dmtRUXBwVVhmUDdldjJJcjdQWUhISmE0NVhUQjA3eVJ3ZzBWTmJHWmxROUQ5bEF6cFdRU1RBTFZPTWR2a2pIcnJuRk90d3EzVVY4ckE9/psychonaut_-_spiritwalker_(Vuxo7.com).mp3",
-        //   url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
-        //   favorited: false
-        // },
+        {
+          name: "Tranquillicy",
+          artist: "Chi-A.D.",
+          source: track_2,
+          // url: "https://www.youtube.com/watch?v=vSQzEDX6v1s",
+          favorited: true
+        },
+        {
+          name: "Spiritwalker",
+          artist: "Psychonaut",
+          source: track_3,
+          // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
+          favorited: false
+        },
+        {
+          name: "Out of Your Control",
+          artist: "X-Dream",
+          source: track_4,
+          // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
+          favorited: false
+        },
+        {
+          name: "Afterglow",
+          artist: "Cosmosis",
+          source: track_5,
+          // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
+          favorited: false
+        },
+        {
+          name: "Waterphone",
+          artist: "Mittelstandskinder Ohne Strom",
+          source: track_6,
+          // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
+          favorited: false
+        },
+        {
+          name: "Christania Jay",
+          artist: "Fluffy Puppy",
+          source: track_7,
+          // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
+          favorited: false
+        },
+        {
+          name: "Gone",
+          artist: "Mittelstandskinder Ohne Strom",
+          source: track_8,
+          // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
+          favorited: false
+        },
+        {
+          name: "Relaxed Vortex",
+          artist: "X-Dream",
+          source: track_9,
+          // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
+          favorited: false
+        },
+        {
+          name: "Raheya (Shulman Remix)",
+          artist: "Sub6",
+          source: track_10,
+          // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
+          favorited: false
+        },
+        {
+          name: "Come in Peace (Reprise)",
+          artist: "Psysex",
+          source: track_11,
+          // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
+          favorited: false
+        },
       ],
       currentTrack: null,
       currentTrackIndex: 0,

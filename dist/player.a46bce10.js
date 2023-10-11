@@ -119,10 +119,40 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"audio/01 - Way Out West - Muthafucka (Soundscape Mix).mp3":[function(require,module,exports) {
 module.exports = "/01 - Way Out West - Muthafucka (Soundscape Mix).3ba3cc66.mp3";
+},{}],"audio/02 - Chi-Ad - Tranquillicy.mp3":[function(require,module,exports) {
+module.exports = "/02 - Chi-Ad - Tranquillicy.97a9efb0.mp3";
+},{}],"audio/03 - Psychonaut - Spiritwalker.mp3":[function(require,module,exports) {
+module.exports = "/03 - Psychonaut - Spiritwalker.7a846d02.mp3";
+},{}],"audio/04 - X-Dream - Out of Your Control.mp3":[function(require,module,exports) {
+module.exports = "/04 - X-Dream - Out of Your Control.52afe6bb.mp3";
+},{}],"audio/05 - Cosmosis - Afterglow.mp3":[function(require,module,exports) {
+module.exports = "/05 - Cosmosis - Afterglow.5c88a5ab.mp3";
+},{}],"audio/06 - Mittelstandskinder Ohne Strom - Waterphone.mp3":[function(require,module,exports) {
+module.exports = "/06 - Mittelstandskinder Ohne Strom - Waterphone.3e99d7ca.mp3";
+},{}],"audio/07 - Fluffy Puppy - Christania Jay.mp3":[function(require,module,exports) {
+module.exports = "/07 - Fluffy Puppy - Christania Jay.202ca605.mp3";
+},{}],"audio/08 - Mittelstandskinder Ohne Strom - Gone.mp3":[function(require,module,exports) {
+module.exports = "/08 - Mittelstandskinder Ohne Strom - Gone.bfd79f22.mp3";
+},{}],"audio/09 - X-Dream - Relaxed Vortex.mp3":[function(require,module,exports) {
+module.exports = "/09 - X-Dream - Relaxed Vortex.feab2928.mp3";
+},{}],"audio/10 - Sub6 - Raheya (Shulman Remix).mp3":[function(require,module,exports) {
+module.exports = "/10 - Sub6 - Raheya (Shulman Remix).2f4f4f2d.mp3";
+},{}],"audio/11 - Psysex - Come in Peace (Reprise).mp3":[function(require,module,exports) {
+module.exports = "/11 - Psysex - Come in Peace (Reprise).cefe28a6.mp3";
 },{}],"js/player.js":[function(require,module,exports) {
 "use strict";
 
 var _WayOutWestMuthafuckaSoundscapeMix = _interopRequireDefault(require("../audio/01 - Way Out West - Muthafucka (Soundscape Mix).mp3"));
+var _ChiAdTranquillicy = _interopRequireDefault(require("../audio/02 - Chi-Ad - Tranquillicy.mp3"));
+var _PsychonautSpiritwalker = _interopRequireDefault(require("../audio/03 - Psychonaut - Spiritwalker.mp3"));
+var _XDreamOutOfYourControl = _interopRequireDefault(require("../audio/04 - X-Dream - Out of Your Control.mp3"));
+var _CosmosisAfterglow = _interopRequireDefault(require("../audio/05 - Cosmosis - Afterglow.mp3"));
+var _MittelstandskinderOhneStromWaterphone = _interopRequireDefault(require("../audio/06 - Mittelstandskinder Ohne Strom - Waterphone.mp3"));
+var _FluffyPuppyChristaniaJay = _interopRequireDefault(require("../audio/07 - Fluffy Puppy - Christania Jay.mp3"));
+var _MittelstandskinderOhneStromGone = _interopRequireDefault(require("../audio/08 - Mittelstandskinder Ohne Strom - Gone.mp3"));
+var _XDreamRelaxedVortex = _interopRequireDefault(require("../audio/09 - X-Dream - Relaxed Vortex.mp3"));
+var _Sub6RaheyaShulmanRemix = _interopRequireDefault(require("../audio/10 - Sub6 - Raheya (Shulman Remix).mp3"));
+var _PsysexComeInPeaceReprise = _interopRequireDefault(require("../audio/11 - Psysex - Come in Peace (Reprise).mp3"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 new Vue({
   el: "#app",
@@ -137,28 +167,70 @@ new Vue({
       tracks: [{
         name: "Muthafucka (Soundscape Mix)",
         artist: "Way Out West",
-        // cover: "https://i.discogs.com/TI9fNIwxEr-cYGUdvLrb7Cq-ooQZc0Wans6Wacj29DA/rs:fit/g:sm/q:90/h:460/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyNDM2/Mi0xMTY4NzcwNDQ2/LmpwZWc.jpeg",
-        // source: "https://oxy.sunproxy.net/file/SUsvSEtsdEJlNndmWHMwQUc3Zkd6NCtiMU9xSEx1dmtRUXBwVVhmUDdldWsxYzdUL3UwTVJwRVR0ZDlzYk5USXBvTDRadGt6SUVkd1NSWVFQVmltangwczJvcXBDSEFBRDhDNExvV1hxZmc9/Way_Out_West_-_Muthafucka_Soundscape_Rmx_(Vuxo7.com).mp3",
         source: _WayOutWestMuthafuckaSoundscapeMix.default,
-        url: "https://www.youtube.com/watch?v=GtcKN6w_B1k",
+        // url: "https://www.youtube.com/watch?v=GtcKN6w_B1k",
         favorited: false
-      }
-      // {
-      //   name: "Tranquillicy",
-      //   artist: "Chi-A.D.",
-      //   source: "https://oxy.sunproxy.net/file/SUsvSEtsdEJlNndmWHMwQUc3Zkd6NCtiMU9xSEx1dmtRUXBwVVhmUDdldDFMaCtrZmNDcm5BSTdzTVRnOThuQ2lieDZVYmtKbmg5d085bmh6SVoyZ1QzdERhcG5yNjBETDNaVFZieWZielU9/Chi-A.D._-_Tranquillicy_(Vuxo7.com).mp3",
-      //   url: "https://www.youtube.com/watch?v=vSQzEDX6v1s",
-      //   favorited: true
-      // },
-      // {
-      //   name: "Spiritwalker",
-      //   artist: "Psychonaut",
-      //   source: "https://oxy.sunproxy.net/file/SUsvSEtsdEJlNndmWHMwQUc3Zkd6NCtiMU9xSEx1dmtRUXBwVVhmUDdldjJJcjdQWUhISmE0NVhUQjA3eVJ3ZzBWTmJHWmxROUQ5bEF6cFdRU1RBTFZPTWR2a2pIcnJuRk90d3EzVVY4ckE9/psychonaut_-_spiritwalker_(Vuxo7.com).mp3",
-      //   url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
-      //   favorited: false
-      // },
-      ],
-
+      }, {
+        name: "Tranquillicy",
+        artist: "Chi-A.D.",
+        source: _ChiAdTranquillicy.default,
+        // url: "https://www.youtube.com/watch?v=vSQzEDX6v1s",
+        favorited: true
+      }, {
+        name: "Spiritwalker",
+        artist: "Psychonaut",
+        source: _PsychonautSpiritwalker.default,
+        // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
+        favorited: false
+      }, {
+        name: "Out of Your Control",
+        artist: "X-Dream",
+        source: _XDreamOutOfYourControl.default,
+        // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
+        favorited: false
+      }, {
+        name: "Afterglow",
+        artist: "Cosmosis",
+        source: _CosmosisAfterglow.default,
+        // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
+        favorited: false
+      }, {
+        name: "Waterphone",
+        artist: "Mittelstandskinder Ohne Strom",
+        source: _MittelstandskinderOhneStromWaterphone.default,
+        // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
+        favorited: false
+      }, {
+        name: "Christania Jay",
+        artist: "Fluffy Puppy",
+        source: _FluffyPuppyChristaniaJay.default,
+        // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
+        favorited: false
+      }, {
+        name: "Gone",
+        artist: "Mittelstandskinder Ohne Strom",
+        source: _MittelstandskinderOhneStromGone.default,
+        // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
+        favorited: false
+      }, {
+        name: "Relaxed Vortex",
+        artist: "X-Dream",
+        source: _XDreamRelaxedVortex.default,
+        // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
+        favorited: false
+      }, {
+        name: "Raheya (Shulman Remix)",
+        artist: "Sub6",
+        source: _Sub6RaheyaShulmanRemix.default,
+        // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
+        favorited: false
+      }, {
+        name: "Come in Peace (Reprise)",
+        artist: "Psysex",
+        source: _PsysexComeInPeaceReprise.default,
+        // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
+        favorited: false
+      }],
       currentTrack: null,
       currentTrackIndex: 0,
       transitionName: null
@@ -286,7 +358,7 @@ new Vue({
     }
   }
 });
-},{"../audio/01 - Way Out West - Muthafucka (Soundscape Mix).mp3":"audio/01 - Way Out West - Muthafucka (Soundscape Mix).mp3"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../audio/01 - Way Out West - Muthafucka (Soundscape Mix).mp3":"audio/01 - Way Out West - Muthafucka (Soundscape Mix).mp3","../audio/02 - Chi-Ad - Tranquillicy.mp3":"audio/02 - Chi-Ad - Tranquillicy.mp3","../audio/03 - Psychonaut - Spiritwalker.mp3":"audio/03 - Psychonaut - Spiritwalker.mp3","../audio/04 - X-Dream - Out of Your Control.mp3":"audio/04 - X-Dream - Out of Your Control.mp3","../audio/05 - Cosmosis - Afterglow.mp3":"audio/05 - Cosmosis - Afterglow.mp3","../audio/06 - Mittelstandskinder Ohne Strom - Waterphone.mp3":"audio/06 - Mittelstandskinder Ohne Strom - Waterphone.mp3","../audio/07 - Fluffy Puppy - Christania Jay.mp3":"audio/07 - Fluffy Puppy - Christania Jay.mp3","../audio/08 - Mittelstandskinder Ohne Strom - Gone.mp3":"audio/08 - Mittelstandskinder Ohne Strom - Gone.mp3","../audio/09 - X-Dream - Relaxed Vortex.mp3":"audio/09 - X-Dream - Relaxed Vortex.mp3","../audio/10 - Sub6 - Raheya (Shulman Remix).mp3":"audio/10 - Sub6 - Raheya (Shulman Remix).mp3","../audio/11 - Psysex - Come in Peace (Reprise).mp3":"audio/11 - Psysex - Come in Peace (Reprise).mp3"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -311,7 +383,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55076" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55597" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
