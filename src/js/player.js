@@ -10,7 +10,6 @@ import track_9 from '../audio/09 - X-Dream - Relaxed Vortex.mp3';
 import track_10 from '../audio/10 - Sub6 - Raheya (Shulman Remix).mp3';
 import track_11 from '../audio/11 - Psysex - Come in Peace (Reprise).mp3';
 
-
 new Vue({
   el: "#app",
   data() {
@@ -26,78 +25,56 @@ new Vue({
           name: "Muthafucka (Soundscape Mix)",
           artist: "Way Out West",
           source: track_1,
-          // url: "https://www.youtube.com/watch?v=GtcKN6w_B1k",
-          favorited: false
         },
         {
           name: "Tranquillicy",
           artist: "Chi-A.D.",
           source: track_2,
-          // url: "https://www.youtube.com/watch?v=vSQzEDX6v1s",
-          favorited: true
         },
         {
           name: "Spiritwalker",
           artist: "Psychonaut",
           source: track_3,
-          // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
-          favorited: false
         },
         {
           name: "Out of Your Control",
           artist: "X-Dream",
           source: track_4,
-          // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
-          favorited: false
         },
         {
           name: "Afterglow",
           artist: "Cosmosis",
           source: track_5,
-          // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
-          favorited: false
         },
         {
           name: "Waterphone",
           artist: "Mittelstandskinder Ohne Strom",
           source: track_6,
-          // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
-          favorited: false
         },
         {
           name: "Christania Jay",
           artist: "Fluffy Puppy",
           source: track_7,
-          // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
-          favorited: false
         },
         {
           name: "Gone",
           artist: "Mittelstandskinder Ohne Strom",
           source: track_8,
-          // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
-          favorited: false
         },
         {
           name: "Relaxed Vortex",
           artist: "X-Dream",
           source: track_9,
-          // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
-          favorited: false
         },
         {
           name: "Raheya (Shulman Remix)",
           artist: "Sub6",
           source: track_10,
-          // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
-          favorited: false
         },
         {
           name: "Come in Peace (Reprise)",
           artist: "Psysex",
           source: track_11,
-          // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
-          favorited: false
         },
       ],
       currentTrack: null,
@@ -197,11 +174,6 @@ new Vue({
         }
       }, 300);
     },
-    favorite() {
-      this.tracks[this.currentTrackIndex].favorited = !this.tracks[
-        this.currentTrackIndex
-      ].favorited;
-    }
   },
   created() {
     let vm = this;

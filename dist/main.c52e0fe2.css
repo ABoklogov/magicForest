@@ -82,10 +82,6 @@ body {
   transform: translateZ(300px) scale(.9);
 }
 
-/* .layer-6 {
-  transform: translateZ(340px) scale(.6);
-} */
-
 .layer-6 {
   transform: translateZ(380px);
 }

@@ -124,8 +124,7 @@ document.addEventListener('mousemove', function (e) {
   });
 });
 var startPlayerBtn = document.querySelector('.button-start');
-var playerLayer = document.querySelector('.layer-6');
-var player = document.querySelector('.player');
+var playerLayer = document.querySelector('.player-layer');
 startPlayerBtn.addEventListener('click', function () {
   playerLayer.classList.add('show');
   startPlayerBtn.classList.add('is-hidden');
@@ -155,7 +154,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55597" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62551" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

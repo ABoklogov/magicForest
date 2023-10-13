@@ -8,8 +8,7 @@ document.addEventListener('mousemove', e => {
 })
 
 const startPlayerBtn = document.querySelector('.button-start');
-const playerLayer = document.querySelector('.layer-6');
-const player = document.querySelector('.player');
+const playerLayer = document.querySelector('.player-layer');
 
 startPlayerBtn.addEventListener('click', () => {
   playerLayer.classList.add('show');

@@ -167,69 +167,47 @@ new Vue({
       tracks: [{
         name: "Muthafucka (Soundscape Mix)",
         artist: "Way Out West",
-        source: _WayOutWestMuthafuckaSoundscapeMix.default,
-        // url: "https://www.youtube.com/watch?v=GtcKN6w_B1k",
-        favorited: false
+        source: _WayOutWestMuthafuckaSoundscapeMix.default
       }, {
         name: "Tranquillicy",
         artist: "Chi-A.D.",
-        source: _ChiAdTranquillicy.default,
-        // url: "https://www.youtube.com/watch?v=vSQzEDX6v1s",
-        favorited: true
+        source: _ChiAdTranquillicy.default
       }, {
         name: "Spiritwalker",
         artist: "Psychonaut",
-        source: _PsychonautSpiritwalker.default,
-        // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
-        favorited: false
+        source: _PsychonautSpiritwalker.default
       }, {
         name: "Out of Your Control",
         artist: "X-Dream",
-        source: _XDreamOutOfYourControl.default,
-        // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
-        favorited: false
+        source: _XDreamOutOfYourControl.default
       }, {
         name: "Afterglow",
         artist: "Cosmosis",
-        source: _CosmosisAfterglow.default,
-        // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
-        favorited: false
+        source: _CosmosisAfterglow.default
       }, {
         name: "Waterphone",
         artist: "Mittelstandskinder Ohne Strom",
-        source: _MittelstandskinderOhneStromWaterphone.default,
-        // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
-        favorited: false
+        source: _MittelstandskinderOhneStromWaterphone.default
       }, {
         name: "Christania Jay",
         artist: "Fluffy Puppy",
-        source: _FluffyPuppyChristaniaJay.default,
-        // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
-        favorited: false
+        source: _FluffyPuppyChristaniaJay.default
       }, {
         name: "Gone",
         artist: "Mittelstandskinder Ohne Strom",
-        source: _MittelstandskinderOhneStromGone.default,
-        // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
-        favorited: false
+        source: _MittelstandskinderOhneStromGone.default
       }, {
         name: "Relaxed Vortex",
         artist: "X-Dream",
-        source: _XDreamRelaxedVortex.default,
-        // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
-        favorited: false
+        source: _XDreamRelaxedVortex.default
       }, {
         name: "Raheya (Shulman Remix)",
         artist: "Sub6",
-        source: _Sub6RaheyaShulmanRemix.default,
-        // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
-        favorited: false
+        source: _Sub6RaheyaShulmanRemix.default
       }, {
         name: "Come in Peace (Reprise)",
         artist: "Psysex",
-        source: _PsysexComeInPeaceReprise.default,
-        // url: "https://www.youtube.com/watch?v=lBj-bL3gvTI",
-        favorited: false
+        source: _PsysexComeInPeaceReprise.default
       }],
       currentTrack: null,
       currentTrackIndex: 0,
@@ -326,9 +304,6 @@ new Vue({
           _this.audio.pause();
         }
       }, 300);
-    },
-    favorite: function favorite() {
-      this.tracks[this.currentTrackIndex].favorited = !this.tracks[this.currentTrackIndex].favorited;
     }
   },
   created: function created() {
@@ -383,7 +358,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55597" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62551" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
