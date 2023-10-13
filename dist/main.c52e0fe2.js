@@ -172,7 +172,7 @@ module.exports = reloadCSS;
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\fonts\\kamerik205-heavy.woff2":[["kamerik205-heavy.744e4963.woff2","fonts/kamerik205-heavy.woff2"],"fonts/kamerik205-heavy.woff2"],"./..\\fonts\\merriweather-regular-italic.woff2":[["merriweather-regular-italic.0055704c.woff2","fonts/merriweather-regular-italic.woff2"],"fonts/merriweather-regular-italic.woff2"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\fonts\\kamerik205-heavy.woff2":[["kamerik205-heavy.744e4963.woff2","fonts/kamerik205-heavy.woff2"],"fonts/kamerik205-heavy.woff2"],"./..\\fonts\\merriweather-regular-italic.woff2":[["merriweather-regular-italic.0055704c.woff2","fonts/merriweather-regular-italic.woff2"],"fonts/merriweather-regular-italic.woff2"],"./..\\img\\logo.svg":[["logo.f1d8a4c6.svg","img/logo.svg"],"img/logo.svg"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -197,7 +197,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62551" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59038" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

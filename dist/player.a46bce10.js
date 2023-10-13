@@ -244,7 +244,7 @@ new Vue({
       if (cursec < 10) {
         cursec = "0" + cursec;
       }
-      this.duration = durmin + ":" + dursec;
+      this.duration = (durmin ? durmin : '--') + ":" + (dursec ? dursec : '--');
       this.currentTime = curmin + ":" + cursec;
     },
     updateBar: function updateBar(x) {
@@ -304,6 +304,12 @@ new Vue({
           _this.audio.pause();
         }
       }, 300);
+    },
+    closePlayer: function closePlayer() {
+      var startPlayerBtn = document.querySelector('.button-start');
+      var playerLayer = document.querySelector('.player-layer');
+      playerLayer === null || playerLayer === void 0 || playerLayer.classList.remove('show');
+      startPlayerBtn === null || startPlayerBtn === void 0 || startPlayerBtn.classList.remove('is-hidden');
     }
   },
   created: function created() {
@@ -358,7 +364,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62551" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59038" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

@@ -113,7 +113,7 @@ new Vue({
       if (cursec < 10) {
         cursec = "0" + cursec;
       }
-      this.duration = durmin + ":" + dursec;
+      this.duration = (durmin ? durmin : '--') + ":" + (dursec ? dursec : '--');
       this.currentTime = curmin + ":" + cursec;
     },
     updateBar(x) {
@@ -174,6 +174,13 @@ new Vue({
         }
       }, 300);
     },
+    closePlayer() {
+      const startPlayerBtn = document.querySelector('.button-start');
+      const playerLayer = document.querySelector('.player-layer');
+
+      playerLayer?.classList.remove('show');
+      startPlayerBtn?.classList.remove('is-hidden');
+    }
   },
   created() {
     let vm = this;

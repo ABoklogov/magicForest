@@ -16,7 +16,7 @@
 <script src="/main.c52e0fe2.js"></script><script src="/player.3d4fcdd9.js"></script></head>
 
 <body>
-  <div class="logo" style="background-image: url(/logo.f1d8a4c6.svg);"></div>
+  <div class="logo"></div>
 
   <section class="layers">
     <div class="layers__container">
@@ -85,6 +85,12 @@
         </svg>
       </div>
     </div>
+
+    <button class="close" @click="closePlayer">
+      <svg class="icon icon--close">
+        <use xlink:href="#close"></use>
+      </svg>
+    </button>
     <svg xmlns="http://www.w3.org/2000/svg" hidden="" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <symbol id="icon-heart-o" viewBox="0 0 32 32">
@@ -154,6 +160,12 @@
       </path>
       <path d="M2.304 5.248c-1.248 0-2.304 1.024-2.304 2.304v16.928c0 1.248 1.024 2.304 2.304 2.304s2.304-1.024 2.304-2.304v-16.928c-0.064-1.28-1.056-2.304-2.304-2.304z">
       </path>
+    </symbol>
+    <symbol id="close" width="35" height="35" viewBox="0 0 35 35">
+      <title>close</title>
+      <path d="M35 0H0V35H35V0Z" fill="white" fill-opacity="0.01"></path>
+      <path d="M7 7L28 28" stroke="#5C5C5C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M7 28L28 7" stroke="#5C5C5C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
     </symbol>
   </defs>
 </svg>

@@ -31,7 +31,10 @@ body {
   --logo-size: calc(var(--index) * 7.8);
   width: var(--logo-size);
   height: var(--logo-size);
+  background-image: url(/logo.f1d8a4c6.svg);
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: calc(var(--logo-size) / 1.5);
   position: absolute;
   left: calc(50% - calc(var(--logo-size) / 2));
   top: calc(var(--index) * 2.8);
@@ -84,6 +87,16 @@ body {
 
 .layer-6 {
   transform: translateZ(380px);
+}
+
+@media screen and (min-width: 1800px) {
+  .layer-1 {
+    transform: translateZ(-55px) scale(1.18);
+  }
+
+  .layer-2 {
+    transform: translateZ(80px) scale(1);
+  }
 }
 
 .hero-content {

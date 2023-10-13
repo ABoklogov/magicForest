@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html",
-    "predeploy": "npm run build -- --public-url /HellEn-school/",
-    "deploy": "gh-pages -d dist"
+    "build": "parcel build src/*.html --no-minify",
+    "predeploy": "npm run build",
+    "deploy": "netlify deploy -p"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.31",
     "posthtml-include": "^1.7.4"
   }
 }
