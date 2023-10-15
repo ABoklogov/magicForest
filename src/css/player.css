@@ -258,6 +258,23 @@
 .icon--close {
   width: 35px;
   height: 35px;
+  color: #98b9ec;
+  transition: color 0.35s ease-in-out;
+}
+
+.icon--close:hover,
+.icon-close:focus {
+  color: #d0d8e6;
+}
+
+.icon--play {
+  color: #d0d8e6;
+  transition: color 0.25s ease-in-out;
+}
+
+.icon--play:hover,
+.icon--play:focus {
+  color: #eff0f2;
 }
 
 @media screen and (min-width: 320px) {
@@ -290,7 +307,7 @@
 
 @media screen and (min-width: 375px) {
   .player {
-    top: 65vh;
+    top: 60vh;
     transform: scale(0.85);
   }
 }
@@ -303,7 +320,7 @@
 
 @media screen and (min-width: 820px) {
   .player {
-    top: 70vh;
+    top: 65vh;
     background-image: url(/img/player-tablete.svg);
     width: 800px;
   }
@@ -326,7 +343,7 @@
 
 @media screen and (min-width: 1200px) {
   .player {
-    top: 75vh;
+    top: 70vh;
     background-image: url(/img/player-desctop.svg);
     width: 1200px;
   }
