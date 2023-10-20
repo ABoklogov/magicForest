@@ -178,8 +178,8 @@ new Vue({
       startPlayerBtn?.classList.remove('is-hidden');
       playerLayer.classList.add('player-layer--pointer');
 
-      this.resetAudio();
       this.currentTrack = this.tracks[0];
+      this.resetAudio();
       this.isTimerPlaying = false;
     },
     collapsePlayer() {
