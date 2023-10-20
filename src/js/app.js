@@ -9,8 +9,17 @@ document.addEventListener('mousemove', e => {
 
 const startPlayerBtn = document.querySelector('.button-start');
 const playerLayer = document.querySelector('.player-layer');
+const collapsePlayer = document.querySelector('.collapse-player');
 
 startPlayerBtn.addEventListener('click', () => {
   playerLayer.classList.add('show');
   startPlayerBtn.classList.add('is-hidden');
-})
+  playerLayer.classList.remove('player-layer--pointer');
+});
+
+collapsePlayer.addEventListener('click', () => {
+  const player = document.querySelector('.player');
+
+  collapsePlayer.classList.remove('show');
+  player.classList.remove('player--collapse');
+});

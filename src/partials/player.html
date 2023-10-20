@@ -45,11 +45,18 @@
       </div>
     </div>
 
-    <button class="close" @click="closePlayer">
-      <svg class="icon icon--close">
-        <use xlink:href="#close"></use>
-      </svg>
-    </button>
+    <div class="close-container">
+      <button class="collapse" @click="collapsePlayer">
+        <svg class="icon icon--collapse">
+          <use xlink:href="#collapse"></use>
+        </svg>
+      </button>
+      <button class="close" @click="closePlayer">
+        <svg class="icon icon--close">
+          <use xlink:href="#close"></use>
+        </svg>
+      </button>
+    </div>
     <include src="./partials/icons.html"></include>
   </div>
 </div>

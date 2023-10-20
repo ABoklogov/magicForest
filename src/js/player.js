@@ -141,7 +141,6 @@ new Vue({
     },
     prevTrack() {
       this.transitionName = "scale-in";
-      this.isShowCover = false;
       if (this.currentTrackIndex > 0) {
         this.currentTrackIndex--;
       } else {
@@ -152,7 +151,6 @@ new Vue({
     },
     nextTrack() {
       this.transitionName = "scale-out";
-      this.isShowCover = false;
       if (this.currentTrackIndex < this.tracks.length - 1) {
         this.currentTrackIndex++;
       } else {
@@ -162,10 +160,8 @@ new Vue({
       this.resetPlayer();
     },
     resetPlayer() {
-      this.barWidth = 0;
-      this.circleLeft = 0;
-      this.audio.currentTime = 0;
-      this.audio.src = this.currentTrack.source;
+      this.resetAudio();
+
       setTimeout(() => {
         if (this.isTimerPlaying) {
           this.audio.play();
@@ -180,7 +176,25 @@ new Vue({
 
       playerLayer?.classList.remove('show');
       startPlayerBtn?.classList.remove('is-hidden');
-    }
+      playerLayer.classList.add('player-layer--pointer');
+
+      this.resetAudio();
+      this.currentTrack = this.tracks[0];
+      this.isTimerPlaying = false;
+    },
+    collapsePlayer() {
+      const player = document.querySelector('.player');
+      const collapsePlayer = document.querySelector('.collapse-player');
+
+      player.classList.add('player--collapse');
+      collapsePlayer.classList.add('show');
+    },
+    resetAudio() {
+      this.barWidth = 0;
+      this.circleLeft = 0;
+      this.audio.currentTime = 0;
+      this.audio.src = this.currentTrack.source;
+    },
   },
   created() {
     let vm = this;
@@ -198,15 +212,5 @@ new Vue({
       vm.nextTrack();
       this.isTimerPlaying = true;
     };
-
-    // this is optional (for preload covers)
-    for (let index = 0; index < this.tracks.length; index++) {
-      const element = this.tracks[index];
-      let link = document.createElement('link');
-      link.rel = "prefetch";
-      link.href = element.cover;
-      link.as = "image"
-      document.head.appendChild(link)
-    }
   }
 });

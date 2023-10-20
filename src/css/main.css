@@ -133,8 +133,13 @@ body {
   transition: opacity var(--transitionSpeed);
 }
 
+.button-start.is-hidden {
+  cursor: auto;
+}
+
 .layer-4,
 .layer-5,
-.layer-6 {
+.layer-6,
+.player-layer--pointer {
   pointer-events: none;
 }
